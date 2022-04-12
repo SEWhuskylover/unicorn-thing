@@ -10,7 +10,7 @@ def generate_token(balance):
     # lets the player exit if play_again does = x
     while play_again != "x" and balance != 0:
         rounds_played += 1
-        number = random.randint(1, 100)  # can only be donkey
+        number = random.randint(1, 100)  # chooses token
         if 1 <= number <= 5:
             token = "unicorn"
             balance += 4
@@ -34,5 +34,5 @@ rounds_played = 0
 starting_balance = 5
 closing_balance = generate_token(starting_balance)
 print(f"\n starting balance was {starting_balance}")
-print(f"rounds played { rounds_played}")
+print(f" rounds played { rounds_played}")
 print(f" new balance is {closing_balance}")
